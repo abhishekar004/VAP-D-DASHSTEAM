@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bona Nova SC", serif;
+  font-weight: 700;
+  font-style: normal;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    padding: 20px 50px;
+    background: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.subscribe-btn {
+    font-family: "Bona Nova SC", serif;
+  font-weight: 700;
+  font-style: normal;
+    background: #ffc107;
+    border: 1px solid #ffc107;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s;
+    &:hover {
+        background: white;
+        color: #ffc107;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.hero-overlay h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content-section {
+    background: white;
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.description {
+    margin: 20px 0;
+    color: #333;
+}
+
+.eco-text {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.get-started {
+    background: #ffc107;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Blog Section Styles */
+.blog-section,
+.ranking-blogs,
+.popular-blogs {
+    padding: 50px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.blog-image {
+    height: 200px;
+    background: #ffc107;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h3 {
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: #333;
+    text-decoration: none;
+}
+
+.see-all {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.see-all a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+    background: #2c2c54;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #3c3c6e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: #ffc107;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #999;
+}
+
+.nav-links .active {
+    color: #ffc107;
+    font-weight: bold;
+}
